@@ -24,17 +24,17 @@ DURATION_LIMIT_MIN = int(
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
 SONG_DOWNLOAD_DURATION = int(
-    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180")
+    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "90")
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "MarinMusic")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Marin")
 
 # Your User ID.
-OWNER_ID = list(map(int, getenv("OWNER_ID", "").split()))  # Input type must be interger
+OWNER_ID = list(map(int, getenv("OWNER_ID", "6924654187").split()))  # Input type must be interger
 
 # Get it from http://dashboard.heroku.com/account
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
@@ -45,9 +45,9 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Infamous-Hydra/Marin-Music",
+    "https://github.com/KojiRobot/Marin-Music",
 )
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
+UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
 # GIT TOKEN ( if your edited repo is private)
 GIT_TOKEN = getenv("GIT_TOKEN", None)
